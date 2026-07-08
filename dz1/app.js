@@ -1,3 +1,4 @@
+
 const firstSelebritySkater = "Tony Hawk"; //выполнил самый сложный трюк
 const firstCreator = "Rodney Mullen"; //создатель первых полноценных скейтов
 const skateCreator = "California"; //страна в которой был создан скейтбординг
@@ -10,6 +11,11 @@ const olympicYear = 2023; //год в котором проходили олим
 
 console.log("Создание скайтбординга:" + " " + skateCreator + " " + creationYear);
 console.log("Olympic champion:" + " " + countryOlympicChampion + " " + olympicYear);
+
+
+//boolean > 1. and($$)
+//          2. or(||)
+//          3. not(!)
 
 
 //мама: -сынок купи хлеб и молоко
@@ -30,4 +36,23 @@ if (isBoughtMilkAndBread) {
 } else {
     console.log("Сынок ты не молодец, хлеба и молока нет");
 
+}
+
+const isBoughtMilkOrBread = isBoughtBread || isBoughtMilk;
+
+if (isBoughtMilkOrBread) {
+    console.log("Молодец сынок что сходил в магазин и купил");
+
+} else {
+    console.log("Сынок ты не молодец, хлеба и молока нет");
+
+}
+
+//мама: -сынок только не покупай сладости, тебе их нельзя
+
+const isBoughtCandy = false;
+
+if (!isBoughtCandy) {
+    console.log("Молодец сынок что не купил сладости");
+    
 }
